@@ -1,0 +1,193 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('kangaroo.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Services Section */
+#services {
+    padding: 50px;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Trip Calculator Section */
+#calculator {
+    padding: 50px;
+    background-color: #eee;
+    text-align: center;
+}
+
+#calculator form {
+    display: inline-block;
+    text-align: left;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+#contact form {
+    display: inline-block;
+    text-align: left;
+}
+
+#contact form label,
+#contact form input,
+#contact form textarea {
+    display: block;
+    margin: 10px 0;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+#contact form button {
+    background-color: #f90;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Additional Animation Styles */
+
+/* Fade-in */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in-visible {
+    opacity: 1;
+}
+
+/* Slide-in from left */
+.slide-in-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.slide-in-left-visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Slide-in from right */
+.slide-in-right {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.slide-in-right-visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Scale up */
+.scale-up {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.scale-up-visible {
+    transform: scale(1);
+    opacity: 1;
+}
+

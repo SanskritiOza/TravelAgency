@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Australia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Welcome to Australia</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#calculator">Trip Calculator</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+   <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>Explore Australia</h1>
+        <p>Your dream vacation awaits.</p>
+    </div>
+</section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">Flight Booking</div>
+            <div class="card">Hotel Reservations</div>
+            <div class="card">Custom Packages</div>
+        </div>
+    </section>
+
+    <!-- Trip Cost Calculator Section -->
+    <section id="calculator">
+        <h2>Trip Cost Calculator</h2>
+        <form id="trip-form">
+            <label for="destination">Destination:</label>
+            <select id="destination" required>
+                <option value="Victoria">VIC</option>
+                <option value="New South Wales">NSW</option>
+                <option value="Queensland">QLD</option>
+                <option value="South Australia">SA</option>
+                <option value="Western Australia">WA</option>
+                <option value="Northern Territory">NT</option>
+                <option value="Tasmania">TAS</option>
+            </select>
+            <label for="days">Number of Days:</label>
+            <input type="number" id="days" required>
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" required>
+            <button type="button" onclick="calculateCost()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
