@@ -240,20 +240,20 @@ nav ul li a:hover {
 }
 
 @media (max-width: 480px) {
-    /* Logo
+    /* Logo*/
     nav .logo {
-        font-size: 1.4em; /* Slightly larger for better readability
-    }*/
+        font-size: 0.4em; /* Slightly larger for better readability*/
+    }
 
     /* Navbar - Stack Items */
     nav ul {
-        flex-direction: row; /* Stack items vertically */
+        flex-direction: column;
         align-items: center;
     }
 
     nav ul li {
         margin: 15px 0; /* More space between menu items */
-        font-size: 1.2em; /* Increase size for easier tap target */
+        font-size: 0.7em; /* Increase size for easier tap target */
     }
 
     /* Hero Section */
