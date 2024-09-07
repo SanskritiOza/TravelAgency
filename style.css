@@ -240,14 +240,14 @@ nav ul li a:hover {
 }
 
 @media (max-width: 480px) {
-    /* Logo */
+    /* Logo
     nav .logo {
-        font-size: 1.4em; /* Slightly larger for better readability */
-    }
+        font-size: 1.4em; /* Slightly larger for better readability
+    }*/
 
     /* Navbar - Stack Items */
     nav ul {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: row; /* Stack items vertically */
         align-items: center;
     }
 
