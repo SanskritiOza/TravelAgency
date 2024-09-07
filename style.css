@@ -240,36 +240,66 @@ nav ul li a:hover {
 }
 
 @media (max-width: 480px) {
+    /* Logo */
     nav .logo {
-        font-size: 1.2em; /* Reduce logo size on smaller screens */
+        font-size: 1.4em; /* Slightly larger for better readability */
     }
 
+    /* Navbar - Stack Items */
     nav ul {
-        flex-direction: column; /* Stack nav items vertically on small screens */
+        flex-direction: column; /* Stack items vertically */
         align-items: center;
     }
 
     nav ul li {
-        margin: 10px 0; /* Adjust margins for nav items */
+        margin: 15px 0; /* More space between menu items */
+        font-size: 1.2em; /* Increase size for easier tap target */
     }
 
+    /* Hero Section */
     .hero-text h1 {
-        font-size: 2em; /* Reduce font size on smaller screens */
+        font-size: 2.2em; /* Slightly larger for better visibility */
+        margin: 10px 0; /* Add margin to avoid text crowding */
     }
 
     .hero button {
-        font-size: 1em; /* Reduce button font size */
-        padding: 8px 16px; /* Adjust padding */
+        font-size: 1.1em; /* Keep buttons accessible */
+        padding: 12px 20px; /* Increase padding for a more comfortable tap area */
     }
 
+    /* Services & Testimonials Section Headers */
     #services h2, #testimonials h2 {
-        font-size: 1.8em; /* Adjust font sizes for headers */
+        font-size: 2em; /* Maintain balance with overall content */
+        margin-bottom: 20px; /* Adjust spacing for cleaner layout */
     }
 
-    .service-cards .card, .testimonial-cards .card {
-        width: 90%; /* Make cards full width on small screens */
+    /* Service and Testimonial Cards */
+    .service-cards .card, 
+    .testimonial-cards .card {
+        width: 95%; /* Full width with slight padding on both sides */
+        margin: 15px 0; /* Space out cards for clarity */
+        padding: 20px; /* Ensure padding inside the card for better readability */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Enhance box-shadow for better visibility */
+        font-size: 1em; /* Maintain readability inside cards */
+    }
+
+    /* Form Inputs (e.g., Contact Form, Calculator) */
+    input, textarea {
+        width: 100%; /* Full width for input fields */
+        font-size: 1em; /* Keep text size legible */
+        padding: 12px; /* Increase padding for ease of typing on small screens */
+        margin-bottom: 15px; /* Provide space between input fields */
+    }
+
+    /* Buttons (e.g., Submit or Calculate buttons) */
+    button {
+        font-size: 1.1em; /* Make buttons larger and easier to tap */
+        padding: 12px 24px; /* Increase padding for better touch experience */
+        width: 100%; /* Full width buttons for ease of use */
+        margin-top: 10px; /* Space between button and form */
     }
 }
+
 
 /* Animations */
 @keyframes fadeInDown {
