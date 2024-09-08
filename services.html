@@ -18,15 +18,31 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    
     <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="card">Flight Booking</div>
-            <div class="card">Hotel Reservations</div>
-            <div class="card">Custom Packages</div>
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+        <!-- Flight Booking Card -->
+        <div class="card" onclick="toggleParagraph(this)">
+            <h3>Flight Booking</h3>
+            <p class="service-desc" style="display: none;">We offer seamless flight booking options for domestic and international destinations. Compare prices, select your preferred airlines, and book your flight with ease. Enjoy exclusive discounts and hassle-free booking with our integrated flight comparison tool.</p>
         </div>
-    </section>
+        
+        <!-- Hotel Reservations Card -->
+        <div class="card" onclick="toggleParagraph(this)">
+            <h3>Hotel Reservations</h3>
+            <p class="service-desc" style="display: none;">Find the perfect accommodation for your trip. Whether you're looking for a luxury hotel, a cozy bed-and-breakfast, or a budget-friendly hostel, we’ve got you covered. Our booking system lets you filter results by location, price, and guest reviews to make your stay as comfortable as possible.</p>
+        </div>
+        
+        <!-- Custom Packages Card -->
+        <div class="card" onclick="toggleParagraph(this)">
+            <h3>Custom Packages</h3>
+            <p class="service-desc" style="display: none;">Let us help you create a custom travel package tailored to your interests and budget. Whether you want to explore Australia's natural wonders, enjoy city life, or take an adventure-packed trip, our travel experts will craft the perfect itinerary for you.</p>
+        </div>
+    </div>
+</section>
+
 
     <script src="script.js"></script>
 </body>

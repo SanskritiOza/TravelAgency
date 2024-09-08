@@ -49,8 +49,8 @@ nav ul li a:hover {
     color: #f90;
 }
 
-/* Hero Section */
-.hero {
+/* Home Section */
+.home {
     background-image: url('kangaroo.png');
     background-size: cover;
     height: 100vh;
@@ -61,12 +61,12 @@ nav ul li a:hover {
     color: black;
 }
 
-.hero-text h1 {
+.home-text h1 {
     font-size: 3em;
     animation: fadeInDown 1s ease-in-out;
 }
 
-.hero button {
+.home button {
     background-color: #f90;
     color: white;
     padding: 10px 20px;
@@ -77,9 +77,27 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
-.hero button:hover {
+.home button:hover {
     background-color: #ffb84d;
 }
+
+/* Card Slide-in Animation */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.service-cards .card {
+    opacity: 0;
+    animation: slideInFromLeft 1s forwards;
+}
+
 
 /* Services Section */
 #services {
@@ -239,95 +257,3 @@ nav ul li a:hover {
     }
 }
 
-@media (max-width: 480px) {
-    /* Logo*/
-    nav .logo {
-        font-size: 0.4em; /* Slightly larger for better readability*/
-    }
-
-    /* Navbar - Stack Items */
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 15px 0; /* More space between menu items */
-        font-size: 0.7em; /* Increase size for easier tap target */
-    }
-
-    /* Hero Section */
-    .hero-text h1 {
-        font-size: 2.2em; /* Slightly larger for better visibility */
-        margin: 10px 0; /* Add margin to avoid text crowding */
-    }
-
-    .hero button {
-        font-size: 1.1em; /* Keep buttons accessible */
-        padding: 12px 20px; /* Increase padding for a more comfortable tap area */
-    }
-
-    /* Services & Testimonials Section Headers */
-    #services h2, #testimonials h2 {
-        font-size: 2em; /* Maintain balance with overall content */
-        margin-bottom: 20px; /* Adjust spacing for cleaner layout */
-    }
-
-    /* Service and Testimonial Cards */
-    .service-cards .card, 
-    .testimonial-cards .card {
-        width: 95%; /* Full width with slight padding on both sides */
-        margin: 15px 0; /* Space out cards for clarity */
-        padding: 20px; /* Ensure padding inside the card for better readability */
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Enhance box-shadow for better visibility */
-        font-size: 1em; /* Maintain readability inside cards */
-    }
-
-    /* Form Inputs (e.g., Contact Form, Calculator) */
-    input, textarea {
-        width: 100%; /* Full width for input fields */
-        font-size: 1em; /* Keep text size legible */
-        padding: 12px; /* Increase padding for ease of typing on small screens */
-        margin-bottom: 15px; /* Provide space between input fields */
-    }
-
-    /* Buttons (e.g., Submit or Calculate buttons) */
-    button {
-        font-size: 1.1em; /* Make buttons larger and easier to tap */
-        padding: 12px 24px; /* Increase padding for better touch experience */
-        width: 100%; /* Full width buttons for ease of use */
-        margin-top: 10px; /* Space between button and form */
-    }
-}
-
-
-/* Animations */
-@keyframes fadeInDown {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.fade-in-visible {
-    opacity: 1;
-}
-
-.scale-up {
-    transform: scale(0.8);
-    opacity: 0;
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-}
-
-.scale-up-visible {
-    transform: scale(1);
-    opacity: 1;
-}

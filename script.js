@@ -19,7 +19,7 @@ function calculateCost() {
     }
 
     let costPerDay = 0;
-
+    
     switch (destination) {
         case 'Victoria':
             costPerDay = 150;
@@ -82,3 +82,14 @@ function validateEmail(email) {
     const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return re.test(String(email).toLowerCase());
 }
+
+function toggleParagraph(card) {
+    const description = card.querySelector('.service-desc');
+    if (description.style.display === 'none' || description.style.display === '') {
+        description.style.display = 'block';  // Show the description
+    } else {
+        description.style.display = 'none';  // Hide the description
+    }
+}
+
+
