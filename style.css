@@ -244,8 +244,33 @@ nav ul li a:hover {
     animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Responsive Design for Services and Testimonials */
+
 @media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Ensure items are in a row */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent the items from wrapping to the next line */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Add some space between the links */
+    }
+
+    nav ul::-webkit-scrollbar {
+        height: 6px; /* Small scrollbar */
+    }
+
+    nav ul::-webkit-scrollbar-thumb {
+        background-color: #333; /* Customize scrollbar thumb color */
+        border-radius: 10px;
+    }
+
+    nav ul::-webkit-scrollbar-track {
+        background: transparent; /* Customize scrollbar track color */
+    }
+}
+
     .service-cards, .testimonial-cards {
         flex-direction: column;
         align-items: center;
