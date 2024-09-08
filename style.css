@@ -269,7 +269,7 @@ nav ul li a:hover {
     nav ul::-webkit-scrollbar-track {
         background: transparent; /* Customize scrollbar track color */
     }
-}
+
 
     .service-cards, .testimonial-cards {
         flex-direction: column;
